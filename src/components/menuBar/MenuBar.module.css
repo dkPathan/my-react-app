@@ -1,0 +1,58 @@
+.wrapper {
+  position: absolute;
+  width: 80px;
+  height: 500px;
+  left: calc(2% - 70px / 2);
+  bottom: 18%;
+  background: rgba(245, 245, 245, 0.15);
+  background-blend-mode: luminosity;
+  backdrop-filter: blur(5.5485px);
+  border-radius: 15px;
+  transition: 0.5s ease-in-out;
+}
+
+.wrapperHidden {
+  position: absolute;
+  width: 80px;
+  height: 500px;
+  left: calc(2% - 70px / 2);
+  bottom: 18%;
+  transition: 0.5s ease-in-out;
+}
+
+.ul {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  height: 100%;
+}
+
+.ul > li > img {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+.ul > li > img:hover {
+  width: 65px;
+  height: 65px;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateX(0);
+    width: 70px;
+    height: 70px;
+  }
+  100% {
+    transform: translateX(20px);
+    width: 70px;
+    height: 70px;
+  }
+}
+.bounceAnimation {
+  animation: bounce 0.5s infinite alternate;
+}
